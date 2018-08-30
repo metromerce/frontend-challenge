@@ -20,6 +20,8 @@ This second step focuses on communication with an external API.
 - Use the [GitHub API](https://developer.github.com/v3/repos/#list-all-public-repositories) to list all public repositories.
 - Show 10 repositories in a table with all the information that you judge necessary.
 - Add pagination to allow the user to navigate the repositories, 10 by 10.
+- Please use Redux or MobX as state management
+
 
 # Guidelines
 
@@ -32,13 +34,13 @@ This second step focuses on communication with an external API.
 ## Input
 
 ```
-{"0": 
+{"0":
   [{"id": 10,
     "title": "House",
     "level": 0,
     "children": [],
     "parent_id": null}],
- "1": 
+ "1":
   [{"id": 12,
     "title": "Red Roof",
     "level": 1,
@@ -54,7 +56,7 @@ This second step focuses on communication with an external API.
     "level": 1,
     "children": [],
     "parent_id": 10}],
- "2": 
+ "2":
   [{"id": 17,
     "title": "Blue Window",
     "level": 2,
@@ -78,11 +80,11 @@ This second step focuses on communication with an external API.
 [{"id": 10,
   "title": "House",
   "level": 0,
-  "children": 
+  "children":
    [{"id": 12,
      "title": "Red Roof",
      "level": 1,
-     "children": 
+     "children":
       [{"id": 17,
         "title": "Blue Window",
         "level": 2,
@@ -102,7 +104,7 @@ This second step focuses on communication with an external API.
     {"id": 13,
      "title": "Wall",
      "level": 1,
-     "children": 
+     "children":
       [{"id": 16,
         "title": "Door",
         "level": 2,
